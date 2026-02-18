@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de Préstamo Estudiantil</title>
+</head>
+<body>
+
+    <h1>Formulario de Solicitud de Préstamo Estudiantil</h1>
+    <p>Por favor, complete todos los campos para procesar su solicitud.</p>
+
+    <form action="/enviar-solicitud" method="POST">
+        
+        <div>
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre">
+        </div><br>
+
+        <div>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo">
+        </div><br>
+
+        <div>
+            <label for="telefono">Número de teléfono:</label><br>
+            <input type="text" id="telefono" name="telefono">
+        </div><br>
+
+        <div>
+            <label for="direccion">Dirección actual:</label><br>
+            <input type="text" id="direccion" name="direccion">
+        </div><br>
+
+        <div>
+            <label for="ciudad">Ciudad:</label><br>
+            <input type="text" id="ciudad" name="ciudad">
+        </div><br>
+
+        <div>
+            <label for="departamento">Departamento:</label><br>
+            <select id="departamento" name="departamento">
+                <option value="distrito central">Distrito Central</option>
+                <option value="cortes">Cortes</option>
+                <option value="atlantida">Atlantida</option>
+                <option value="choluteca">Choluteca</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="cp">Código postal:</label><br>
+            <input type="text" id="cp" name="cp">
+        </div><br>
+
+        <div>
+            <label>Nivel de educación actual:</label><br>
+            <input type="radio" id="prepa" name="nivel_educacion" value="preparatoria">
+            <label for="prepa">Preparatoria</label><br>
+            
+            <input type="radio" id="lic" name="nivel_educacion" value="licenciatura">
+            <label for="lic">Licenciatura</label><br>
+            
+            <input type="radio" id="maestria" name="nivel_educacion" value="maestria">
+            <label for="maestria">Maestría</label><br>
+            
+            <input type="radio" id="doc" name="nivel_educacion" value="doctorado">
+            <label for="doc">Doctorado</label>
+        </div><br>
+
+        <div>
+            <label>Programa de estudio:</label><br>
+            <input type="radio" id="cs" name="programa" value="Ciencias de la Computación">
+            <label for="cs">Ciencias de la Computación</label><br> 
+
+            <input type="radio" id="ingenieria" name="programa" value="ingenieria">
+            <label for="ingenieria">Ingeniería</label><br>
+            
+            <input type="radio" id="economia" name="programa" value="economia">
+            <label for="economia">Economía</label><br>
+            
+            <input type="radio" id="artes" name="programa" value="artes">
+            <label for="artes">Artes</label><br>
+            
+            <input type="radio" id="otro_prog" name="programa" value="otro">
+            <label for="otro_prog">Otro</label>
+        </div><br>
+
+        <div>
+            <label for="monto">Monto del préstamo solicitado:</label><br>
+            <input type="text" id="monto" name="monto">
+        </div><br>
+
+        <div>
+            <label for="razon">Razón para solicitar el préstamo:</label><br>
+            <textarea id="razon" name="razon" rows="4" cols="50"></textarea>
+        </div><br>
+
+        <button type="submit">Enviar Solicitud</button>
+
+    </form>
+
+</body>
+</html>
